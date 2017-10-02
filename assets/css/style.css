@@ -1,0 +1,68 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: LightBlue;
+	font-family: 'Germania One', cursive;
+	background-image: url("assets/images/wall.jpg");
+}
+
+.wrapper {
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+/* header */
+
+header h1 {
+	margin: 30px auto;
+	text-align: center;
+	font-size: 50px;
+}
+
+header {
+	margin-bottom: 40px;
+}
+
+/* main body */
+
+.instructions, .gamearea, .message {
+	margin: 0 auto 40px;
+	text-align: center;
+	padding: 10px 30px;	
+
+}
+
+.midarea {
+	margin: 0 auto 40px;
+	text-align: center;
+	width: 90%;
+
+}
+
+.instructions, .gamearea, .message, #hangmanimage, #guessed, #guessremain, .midarea {
+	border: solid 2px black;
+}
+
+.instructions {
+	width: 80%;
+}
+
+.gamearea, .message {
+	width: 60%;
+}
+
+#hangmanimage {
+	width: 50%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;	
+}
+
+#guessed {
+	width: 40%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;	
+}
+
