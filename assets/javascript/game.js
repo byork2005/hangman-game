@@ -39,17 +39,18 @@ var rightguesses;
 var wrongguesses;
 var tries;
 var word;
+var score = 0;
 
 var triesElement = document.getElementById("guessremain");
 var thewordElement = document.getElementById("wordspaces");
-var wrongElement = document.getElementById("guessedletters");
+var wrongElement = document.getElementById("guessed");
 
 function startgame() {
 
-    var rightguesses = [];
-    var wrongguesses = [];
-    var tries = 10;
-    var word = wordbank[result];
+    rightguesses = [];
+    wrongguesses = [];
+    tries = 10;
+    word = wordbank[result];
 
     for (var i = 0; i < word.length; i++) {
     rightguesses.push('_ ');
@@ -57,9 +58,6 @@ function startgame() {
     console.log(rightguesses, word);
     thewordElement.innerHTML = rightguesses.join(" ");
 }
-
-
-
 
 function solvepuzzle(keypress) 
 {
@@ -89,6 +87,10 @@ document.onkeyup = function(event) {
     console.log(keypress);
     solvepuzzle(keypress);
 }
+
+
+
+
 
 startgame ();
     
