@@ -4,14 +4,17 @@ html {
 }
 
 body {
-	background-color: LightBlue;
 	font-family: 'Germania One', cursive;
-	background-image: url("assets/images/wall.jpg");
+	background-image: url("../images/wall.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .wrapper {
 	max-width: 70%;
 	margin: 0 auto;
+	background-color: lightBlue;
 }
 
 /* header */
@@ -39,6 +42,7 @@ header {
 	margin: 0 auto 40px;
 	text-align: center;
 	width: 90%;
+	height: 300px;
 
 }
 
@@ -58,11 +62,18 @@ header {
 	width: 50%;
 	margin-right: 2.5%;
 	margin-left: 2.5%;	
+	height: 100%;
+	position: relative;
 }
 
 #guessed {
 	width: 40%;
 	margin-right: 2.5%;
 	margin-left: 2.5%;	
+	height: 100%;
+}
+
+#guessremain {
+	position: absolute;
 }
 
