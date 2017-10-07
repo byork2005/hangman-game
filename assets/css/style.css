@@ -14,7 +14,7 @@ body {
 .wrapper {
 	max-width: 70%;
 	margin: 0 auto;
-	background-color: lightBlue;
+	background-color: Navy;
 }
 
 /* header */
@@ -22,7 +22,7 @@ body {
 header h1 {
 	margin: 30px auto;
 	text-align: center;
-	font-size: 50px;
+	font-size: 100px;
 }
 
 header {
@@ -35,23 +35,23 @@ header {
 	margin: 0 auto 40px;
 	text-align: center;
 	padding: 10px 30px;	
-
 }
 
 .midarea {
 	margin: 0 auto 40px;
 	text-align: center;
-	width: 90%;
+	width: 80%;
 	height: 300px;
 
 }
 
-.instructions, .gamearea, .message, #hangmanimage, #guessed, #guessremain, .midarea {
+/*.instructions, .gamearea, .message, #hangmanimage, #guessed, #guessremain, .midarea {
 	border: solid 2px black;
-}
+}*/
 
 .instructions {
 	width: 80%;
+	font-size: 16px;
 }
 
 .gamearea, .message {
@@ -59,21 +59,47 @@ header {
 }
 
 #hangmanimage {
-	width: 50%;
+	width: 45%;
 	margin-right: 2.5%;
 	margin-left: 2.5%;	
 	height: 100%;
 	position: relative;
 }
 
+#imageholder {
+	border: solid 2px black;
+	width: 75px;
+}
+
 #guessed {
-	width: 40%;
-	margin-right: 2.5%;
-	margin-left: 2.5%;	
-	height: 100%;
+	width: 90%;
+	margin: 0 auto;	
+	height: 150px;
+	font-size: 25px;
+	background-color: Cornsilk;
+}
+
+#guesstitle, #wins, #losses, #wordspaces {
+	margin: 0 auto;
+	font-size: 30px;
+	text-align: center;
+	padding: 5px;
 }
 
 #guessremain {
-	position: absolute;
+	margin: 10px auto;
+	font-size: 16px;
 }
+
+#wordspaces, .message {
+	background-color: Cornsilk;
+}
+
+h1, .instructions, #guesstitle, #guessremain {
+	color: #ffffff;
+}
+
+
+
+
 

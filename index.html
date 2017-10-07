@@ -17,12 +17,12 @@
 
 			<header>
 				
-				<h1>Hangman!</h1>
+				<h1>Medieval Hangman!</h1>
 
 			</header>
 
 			<section class="row instructions">
-				<div class="col-md-auto">Instructions...</div>
+				<div class="col-md-auto">Use your keyboard to guess letters! If you can guess the word in 10 or less attempts, you win!</div>
 			</section>
 
 			<section class="row gamearea">
@@ -30,14 +30,23 @@
 			</section>
 
 			<section class="row midarea">
-				<div class="col-md-6" id="hangmanimage">image here
-					<div id="guessremain">10</div>
+				<div class="col-md-5" id="hangmanimage">
+					<img src="assets/images/10.jpg" id="stickman">
 				</div>
-				<div class="col-md-3" id="guessed">guessed letters</div>
+				<div class="col-md-5">
+					<div id="guesstitle">Guessed Letters</div>
+					<div id="guessed"></div>
+					<div id="guessremain">Guesses Remaining: 10</div>
+					<button type="button" class="btn btn-primary btn-lg" onclick="startgame()">Play Again!</button>
+				</div>
 			</section>
 
 			<section class="row message">
-				<div class="col-md-auto">Final Message</div>
+				<div class="col-md-3" id="wins">Wins: 0</div>
+				<div class="col-md-6">
+					<button type="button" class="btn btn-warning" onclick="reset()">Reset</button>
+				</div>
+				<div class="col-md-3" id="losses">Losses: 0</div>
 			</section>
 
 		</div> <!-- wrapper -->
